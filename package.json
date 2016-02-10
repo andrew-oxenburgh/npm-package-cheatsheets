@@ -16,7 +16,7 @@
   "scripts": {
     "test": "mocha demo",
     "lint": "jshint demo",
-    "qa": "npm test && npm run lint"
+    "qa": "rm -rf node_modules && npm install && npm test && npm run lint"
   },
   "jshintConfig": {
     "expr": true,
