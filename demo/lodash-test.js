@@ -42,8 +42,6 @@ describe('#lodash', function () {
         s.should.be.deepEqual([1, 2, 3, 'a', 'b', undefined])
 
         s.splice(s.indexOf('a'), 1);
-
-        console.log(s);
     });
 
 
