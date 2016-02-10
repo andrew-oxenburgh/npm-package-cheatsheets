@@ -29,7 +29,7 @@ describe('#lodash', function () {
         var res = _.map(arr, 'a');
         res = _.orderBy(res);
 
-        res.should.deepEqual([1, 2, 3, undefined])
+        res.should.deepEqual([1, 2, 3, undefined]);
     });
 
     it('#union', function () {
@@ -39,7 +39,7 @@ describe('#lodash', function () {
         var u = _.union(ar);
         s = _.orderBy(u);
 
-        s.should.be.deepEqual([1, 2, 3, 'a', 'b', undefined])
+        s.should.be.deepEqual([1, 2, 3, 'a', 'b', undefined]);
 
         s.splice(s.indexOf('a'), 1);
     });

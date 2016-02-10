@@ -5,14 +5,24 @@
   "main": "index.js",
   "dependencies": {
     "bluebird": "^3.2.2",
+    "jshint": "^2.9.1",
     "lodash": "^4.3.0",
+    "mocha": "^2.4.5",
     "mongodb": "^2.1.7",
     "mongoose": "^4.4.3",
     "should": "^8.2.2"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "moch demo"
+    "test": "mocha demo",
+    "lint": "jshint demo",
+    "qa": "npm test && npm run lint"
+  },
+  "jshintConfig": {
+    "expr": true,
+    "browser": true,
+    "node": true,
+    "mocha": true
   },
   "repository": {
     "type": "git",
