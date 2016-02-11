@@ -14,8 +14,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "mocha demo",
-    "lint": "jshint demo",
+    "test": "mocha demo test",
+    "lint": "jshint demo src test",
     "qa": "rm -rf node_modules && npm install && npm test && npm run lint"
   },
   "jshintConfig": {
